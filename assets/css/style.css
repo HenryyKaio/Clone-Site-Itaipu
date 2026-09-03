@@ -1,1 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #1f2124;
+}
+
+.conteiner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.tituloSecao {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 44px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+header {
+
+    background-image: linear-gradient(180deg, #D7D7D7E0 0%, #FFFFFF00 100%);
+    width: 100%;
+    height: 128px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .menu {
+    background-color: white;
+    width: 96%;
+    height: 85px;
+    padding: 20px 50px;
+    border-radius: 10px;
+
+    display: flex;
+}
+
+header .menu .navegacao {
+
+    list-style: none;
+
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+header .menu .navegacao a {
+    text-decoration: none;
+    color: #1f2124;
+    font-weight: 500;
+
+
+}
+
+header .menu .navegacao .idiomas {
+    display: flex;
+    gap: 5px;
+}
+
+header .menu .navegacao .idiomas img {
+    width: 25px;
+
+}
+
+.videoBanner {
+    width: 100%;
+    position: relative;
+    margin-top: -30px;
+    z-index: -1;
+}
+
+.videoBanner video {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.conhecaParque .conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 50px 0px;
+}
+
+.conhecaParque .conteiner .slogan {
+    flex-basis: 50%;
+}
+
+.conhecaParque .conteiner .slogan img {
+    max-width: 100%;
+}
+
+.conhecaParque .conteiner .texto {
+    flex-basis: 50%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #2d2d2d;
+    padding-top: 25px;
+}
+
+.conhecaParque .conteiner .texto p {
+    margin-bottom: 20px;
+}
+
+.conhecaParque .botaoConhecaParque {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #1478BD;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 15px 25px;
+    font-weight: 500;
+
+    transition: all 0.5s;
+}
+
+.conhecaParque .botaoConhecaParque:hover {
+    background-color: #006627;
+    box-shadow: 0px 0px 10px #00000025;
+}
+
+/* Ambiente Ideal */
+
+.caixaAmbiente .conteiner .ambienteIdeal {
+    min-height: 150px;
+    width: 78%;
+    margin: auto;
+    box-shadow: 0px 0px 6px -3px rgba(0, 0, 0, 0.79);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal .texto {
+    font-size: 25px;
+    color: #2d2d2d;
+    font-weight: 300;
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal .texto .negrito {
+    font-weight: 900;
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal .botão {
+    width: 272px;
+    height: 50px;
+    text-align: center;
+    padding: 12px;
+    text-decoration: underline;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(84deg, #32C121 20%, #099C61 100%);
+    cursor: pointer;
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal img {
+    width: 83.5px;
+    height: 83.5px;
+}
+
+/* Carrosel */
+.emDestaque .carousel-inner {
+    border-radius: 20px;
+
+}
+
+
+/* BLOG */
+
+.nossoBlog {
+    background-color: #F9F9F9;
+    padding: 50px 0 50px 0;
+    margin-top: 170px;
+}
+
+.nossoBlog .publicacoes {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.nossoBlog .publicacao {
+    flex-basis: 33%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000015;
+
+    transition: all 0.3s;
+}
+
+.nossoBlog .publicacao img {
+    max-width: 100%;
+}
+
+.nossoBlog h2 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #2d2d2d;
+    margin: 10px 20px 10px 20px;
+
+}
+
+.nossoBlog p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 20px 10px 20px;
+}
+
+.nossoBlog .publicacao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px #00000050;
+    ;
+}
+
+
+/* videos */
+
+.caixaVideos .conteiner {
+    background-color: #F9F9F9;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
+
+.caixaVideos .conteiner .videos {
+    display: flex;
+    gap: 20px;
+}
+
+.caixaVideos .conteiner .videos .video {
+    width: 340px;
+    height: 191px;
+}
+
+.caixaVideos .conteiner .videos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caixaVideos .conteiner .videos span {
+    color: #2d2d2d;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+/* Footer */
+
+
+
+footer {
+    background: #bd1e1e;
+    background: linear-gradient(90deg, rgba(189, 30, 30, 1) 0%, rgba(156, 26, 63, 1) 19%, rgba(133, 41, 62, 1) 41%, rgba(150, 91, 67, 1) 63%, rgba(140, 114, 22, 1) 79%, rgba(201, 149, 16, 1) 100%);
+    width: 100%;
+    height: 800px;
+}
+
+footer .imagemFooter{
+   width: 100%;
+}
+
+footer .imagemFooter img{
+    width:100%;
+}
+
+footer .conteiner .linha1{
+    display: flex;
+    margin-top: 125px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .conteiner .linha1 .email{
+    display: flex;
+    height: 54px;
+}
+
+footer .conteiner .linha1 .email .botaoInscrever{
+    width:148px;
+    background-color: #1478BD;
+
+}
+
+footer .conteiner .linha1 .NewsLetter{
+    width: 222px;
+}
+
+footer .conteiner .linha1 .NewsLetter span{
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
