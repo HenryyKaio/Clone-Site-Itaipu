@@ -467,6 +467,11 @@ footer .conteiner .linha2 .caixaColunas .colunas span{
     font-size: 17px;
     color: #ffffff;
     font-weight: 500;
+    cursor: pointer;
+}
+
+footer .conteiner .linha2 .caixaColunas .colunas span:hover{
+    text-decoration: underline;
 }
 
 /* LINHA 3 */
