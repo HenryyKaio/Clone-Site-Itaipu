@@ -62,13 +62,47 @@ header .menu .navegacao {
     height: 100%;
 }
 
+header .menu .navegacao i{
+    display: inline-block;
+    transition: transfomr 345ms all ease;
+}
+
 header .menu .navegacao a {
     text-decoration: none;
     color: #1f2124;
     font-weight: 500;
-
-
+    transition: 155ms all ease;
 }
+
+header .menu .navegacao .parquetec:hover a{
+    color: red;
+}
+
+header .menu .navegacao .empresa:hover a{
+    color: rgb(43, 140, 48);
+}
+
+header .menu .navegacao .startup:hover a{
+    color: rgb(55, 107, 185);
+}
+
+header .menu .navegacao .educacao:hover a{
+    color: rgb(209, 155, 45);
+}
+
+header .menu .navegacao .turismo:hover a{
+    color: rgb(43, 140, 48);
+}
+
+header .menu .navegacao .trabalhe:hover a{
+    color: rgb(55, 107, 185);
+}
+
+header .menu .navegacao .icone:hover i{
+    transform: rotate(180deg);
+}
+
+
 
 header .menu .navegacao .idiomas {
     display: flex;
@@ -171,16 +205,42 @@ header .menu .navegacao .idiomas img {
     height: 50px;
     text-align: center;
     padding: 12px;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
     border-radius: 10px;
     background-image: linear-gradient(84deg, #32C121 20%, #099C61 100%);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 355ms all ease;
 }
+
+.caixaAmbiente .conteiner .ambienteIdeal .botão i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal:hover .botão i {
+    transform: rotate(45deg);
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal:hover .botão{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
 
 .caixaAmbiente .conteiner .ambienteIdeal img {
     width: 83.5px;
     height: 83.5px;
+    transition: 355ms all ease;
+}
+
+.caixaAmbiente .conteiner .ambienteIdeal:hover img{
+    transform: scale(0.9);
 }
 
 /* Carrosel */
@@ -210,7 +270,7 @@ header .menu .navegacao .idiomas img {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #00000015;
-
+    cursor: pointer;
     transition: all 0.3s;
 }
 
@@ -243,7 +303,7 @@ header .menu .navegacao .idiomas img {
 /* videos */
 
 .caixaVideos .conteiner {
-    background-color: #F9F9F9;
+
     margin-top: 120px;
     margin-bottom: 70px;
 }
@@ -257,6 +317,12 @@ header .menu .navegacao .idiomas img {
 .caixaVideos .conteiner .videos .video {
     width: 340px;
     height: 191px;
+    overflow: hidden;
+}
+
+.caixaVideos .conteiner .videos .textoVideo{
+    cursor: pointer;
+    width: 340px;
 }
 
 .caixaVideos .conteiner .videos img {
@@ -264,6 +330,11 @@ header .menu .navegacao .idiomas img {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: 555ms all ease;
+}
+
+.caixaVideos .conteiner .videos .textoVideo:hover img{
+    transform: scale(1.1);
 }
 
 .caixaVideos .conteiner .videos span {
@@ -279,9 +350,14 @@ header .menu .navegacao .idiomas img {
 
 footer {
     background: #bd1e1e;
-    background: linear-gradient(90deg, rgba(189, 30, 30, 1) 0%, rgba(156, 26, 63, 1) 19%, rgba(133, 41, 62, 1) 41%, rgba(150, 91, 67, 1) 63%, rgba(140, 114, 22, 1) 79%, rgba(201, 149, 16, 1) 100%);
+    background-image: 
+    radial-gradient(circle at top left, #db3434 0%, transparent 60%),
+    radial-gradient(circle at top right, #e7e73c 0%, transparent 60%),
+    radial-gradient(circle at bottom left, rgb(60, 100, 140) 30%, transparent 60%),
+    radial-gradient(circle at bottom center, rgb(46, 131, 119) 0%, transparent 60%),
+    radial-gradient(circle at bottom right, rgb(42, 139, 45) 0%, transparent 60%);
     width: 100%;
-    height: 800px;
+    height: 1050px;
 }
 
 footer .imagemFooter{
@@ -292,22 +368,54 @@ footer .imagemFooter img{
     width:100%;
 }
 
+
+/* LINHA 1 */
 footer .conteiner .linha1{
     display: flex;
     margin-top: 125px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 70px;
 }
 
 footer .conteiner .linha1 .email{
     display: flex;
     height: 54px;
+    width: 500px;
+    font-weight: 100;
+}
+
+footer .conteiner .linha1 .email input{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    background: rgba(255, 255, 255, .26);
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 400px;
+    font-weight: 300;
+}
+
+footer .conteiner .linha1 .email input::placeholder{
+    color: #fff;
 }
 
 footer .conteiner .linha1 .email .botaoInscrever{
-    width:148px;
+    width:160px;
+    position: relative;
     background-color: #1478BD;
+    padding: 15px;
+    right: 10px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 555ms all ease;
+}
 
+footer .conteiner .linha1 .email .botaoInscrever:hover{
+    background-color: #06700d;
 }
 
 footer .conteiner .linha1 .NewsLetter{
@@ -320,4 +428,143 @@ footer .conteiner .linha1 .NewsLetter span{
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 1px;
+}
+
+/* LINHA 2 */
+
+footer .conteiner .linha2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer .conteiner .linha2 img{
+    width: 210px;
+    height: 132px;
+}
+
+footer .conteiner .linha2 .caixaColunas{
+    display: flex;
+    gap: 120px;
+    margin-left: 250px;
+}
+
+footer .conteiner .linha2 .caixaColunas .colunas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .conteiner .linha2 .caixaColunas .colunas h2{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+footer .conteiner .linha2 .caixaColunas .colunas span{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* LINHA 3 */
+
+footer .conteiner .linha3{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    width: 800px;
+    margin-left: 450px;
+}
+
+footer .conteiner .linha3 .contatos{
+    display: flex;
+    gap: 8px;
+}
+
+footer .conteiner .linha3 .contatos .contato{
+    background-color: #D2D2D270;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    color: #fff;
+    transition: 555ms all ease;
+}
+
+footer .conteiner .linha3 .contatos .contato:hover{
+    transform: scale(0.8);
+    border-bottom: 2px solid #fff;
+}
+
+footer .conteiner .linha3 .contatos .contato i{
+    font-size: 30px;
+}
+
+footer .conteiner .linha3 .voltaTopo{
+    background-color: #D2D2D270;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 10px;
+    height: 45px;
+    font-weight: 100;
+    margin-right: 70px;
+    transition: 555ms all ease;
+}
+
+footer .conteiner .linha3 .voltaTopo:hover{
+    border-bottom: 2px solid #fff;
+}
+
+footer .conteiner .linha3 a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* LINHA 4 */
+
+footer .conteiner .linha4{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px;
+}
+
+footer .conteiner .linha4 .grupo2{
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+footer .conteiner .linha4 .grupo1{
+    display: flex;
+    gap: 100px;
+}
+
+footer .conteiner .linha4 a{
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .conteiner .linha4 a:hover{
+    text-decoration: underline;
+}
+
+/* LINHA 5 */
+
+footer .conteiner .linha5{
+    margin-top: 55px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
